@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+body{
+    background-color: rgb(158, 14, 127);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container{
+    width: 350px;
+    height: 0 auto;
+    /* background-color: blanchedalmond; */
+    border:1px solid rgb(158, 14, 127);
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 5px rgb(116, 58, 103);
+}
+.header{
+    font-size: 28px;
+    padding: 20px;
+    color: rgb(219, 211, 204);
+    text-align: center;
+    border-bottom: 1px solid rgb(116, 58, 103);
+
+}
+.header span{
+    transition: .2s;
+}
+.header span:hover{
+    font-size: 30px;
+}
+.list_1{
+    background-color: rgb(168, 13, 135);
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius: 15px;
+}
+.list_1 li{
+    line-height: 60px;
+    
+    border-bottom: 1px solid rgb(116, 58, 103);
+    font-size: 24px;
+    color: rgb(219, 211, 204);
+    text-indent: 60px;
+    list-style: none;
+    transition: .2s;
+    cursor: pointer;
+}
+.list_1 li:hover{
+    color: rgb(128, 48, 48);
+}
+.list_1 input{
+    width: 0;   
+}
+.list_1 input::before{
+    display: block;
+    content: '';
+    border: 6px solid rgb(185, 66, 175);
+    border-radius: 15px;
+    /* box-shadow: 0 2px 1px 3px rgb(0, 183, 255); */
+    /* width: 10px; */
+    /* height: 10px; */
+    position: relative;
+    top: -5px;
+    left: -35.5px;
+    cursor: pointer;
+}
+.list_1 input::after{
+    display: block;
+    content: '';
+    border: 3px solid rgb(185, 66, 175);
+    border-radius: 15px;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: -22px;
+    left: -39.5px;
+    cursor: pointer;
+}
+.list_1 input:checked::before{
+    /* background-color: rgb(0, 183, 255); */
+    border: 6px solid rgb(0, 183, 255);
+    /* box-shadow: 0 1px 1px 3px rgb(0, 183, 255); */
+}
+.list_1 input:checked::after{
+    /* background-color: rgb(0, 183, 255); */
+    border: 3px solid rgb(0, 183, 255);
+    /* box-shadow: 0 1px 1px 3px rgb(0, 183, 255); */
+}
+.list_1 input:checked+span{
+    font-style: oblique;
+    color: rgb(128, 48, 48);
+}

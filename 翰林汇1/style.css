@@ -1,0 +1,172 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+
+
+    /* background-image: repeating-radial-gradient(rgb(84, 45, 129),rgb(116, 45, 129)); */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.login-background-ing{
+    /* height: auto; */
+    /* width: auto; */
+    overflow: auto;
+}
+.main-container{
+    position: fixed;
+    top: 20%;
+    left: 70%;
+    /* z-index: 1; */
+    /* width: 380px; */
+    /* align-items: center; */
+    box-shadow: 0 5px 10px 3px #7a5a9e;
+    border-radius: 15px;
+    /* background: chartreuse; */
+} 
+.login-container{
+    display: inline-block;
+    padding: 20px;
+    float: left;
+    /* width: 230px; */
+    background-image: repeating-radial-gradient(rgb(103, 72, 139),rgb(116, 45, 129));
+    border-top-left-radius: 16px;
+    border-bottom-left-radius:16px ;
+}
+.login{
+    line-height: 30px;
+    font-size: 18px;
+    color: rgb(245, 234, 234);
+    cursor: pointer;
+}
+.login span:hover{
+    color:rgb(71, 214, 28) ;
+    border-bottom: 2px solid rgb(71, 214, 28);
+
+}
+.login span{
+    border-bottom: 2px solid rgb(217, 219, 61);
+}
+.text_1{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 0;
+}
+.text_1 input{
+    margin-top: 5px;
+    padding: 5px;
+    width: 50px;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    background: none;
+    transition: .3s;
+}
+.text_1 input:hover{
+    border-bottom: 1px solid rgb(71, 214, 28);
+    width: 150px;
+}
+.message-container{
+    margin: 10px 0;
+    transition: .3s;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+.message-container:hover{
+    color: rgb(71, 214, 28);
+}
+.text_1 input::placeholder{
+    color: blanchedalmond;
+}
+.right-container{
+    /* width: 150px; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color:  sandybrown;
+    font-weight: bold;
+    width: 200;
+
+
+    /* background-image: repeating-radial-gradient(rgb(88, 45, 129),rgb(116, 45, 129)); */
+}
+.ri-1{
+    margin:  27PX 0 0 50%;
+    cursor: pointer;
+    width: 28px;
+    border-bottom: 1px solid rgb(217, 219, 61);
+    transition: .3s;
+}
+.ri-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 5px 0 25px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid rgb(217, 219, 61);
+    border-radius: 50px;  
+    transition: .3s;
+}
+.ri-2:hover{
+    background-color:  #7a5a9e;
+}
+.ri-1:hover{
+    font-size: 16px;
+    width: 32px;
+    color:  #7a5a9e;
+    border-bottom : 1px solid rgb(71, 214, 28);
+}
+.text-1 input:checked{
+    width: 100px;
+}
+.usna{
+    position: fixed;
+    top: 0;
+    right: 0; 
+    /* padding:10px ; */
+}
+.usna i{
+    width: auto;
+}
+.usna ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.usna li{
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    margin: 15px;
+    padding: 15px ;
+    list-style: none;
+    cursor: pointer;
+    
+    /* border: 1px solid rgb(202, 34, 194); */
+    border-radius: 60px;
+    background-color: rgba(211, 65, 204, 0.4);
+    box-shadow: 0 5px 10px 3px rgb(116, 45, 129);
+    transition: .3s;
+}
+.usna li:hover{
+    width: 80px;        
+    height: 80px;
+    background-color: rgba(211, 65, 204, 0.7);
+}
+
+
+

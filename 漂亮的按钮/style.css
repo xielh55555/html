@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.item input:checked+audio{
+    src: format('100333.mp3');
+    src: local('100333.mp3');
+    src: url('100333.mp3');
+}
+
+html,
+body {
+  background-color: rgb(44, 43, 42);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: blanchedalmond; */
+  line-height: 100px;
+  width: 200px;
+}
+.item {
+  /* background-color: chartreuse; */
+  display: flex;
+  flex-direction: column;
+  flex-shrink: initial;
+}
+.item i {
+  font-size: 50px;
+  transition: 0.5s;
+}
+.item input {
+  width: 0;
+}
+.item input::after {
+  display: block;
+  content: "";
+  border: 10px solid rgb(27, 27, 27);
+  border-radius: 20px;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 43.6%;
+  transition: 0.5s;
+}
+
+.item input:checked::after {
+  background-color: rgb(0, 183, 255);
+  box-shadow: 0 0 10px 0 rgb(0, 183, 255);
+}
+.item input:checked + i {
+  color: rgb(0, 183, 255);
+  
+}
+.main {
+  width: 250px;
+  height: 160px;
+  position: relative;
+  left: 220px;
+  border: 2px solid rgb(35, 182, 66);
+}
+.item input:checked + .main {
+  border: 2px solid rgb(35, 182, 66);
+}

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+body{
+    /* background: magenta; */
+    background-image: linear-gradient(#203744,#3c4769,#203744);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-container{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 300px;
+}
+.panel-container{
+    height: 460px;
+    /* border: 20px solid rgb(255, 255, 255);
+    border-radius: 300px;
+    box-shadow: 0 0 10px 0 #fff inset; */
+}
